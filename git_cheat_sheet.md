@@ -80,7 +80,7 @@
 ## Git Stash
 
 - **Commands**:
-- **`git stash`**: Save uncommitted changes in a stash.
+  - `git stash`**: Save uncommitted changes in a stash.
   - `git stash list`: Show all stashes.
   - `git stash pop`: Restore and remove the latest stash.
   - `git stash apply`: Apply stash without removing it.
