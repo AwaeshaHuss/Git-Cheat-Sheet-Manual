@@ -72,7 +72,8 @@
   - `git checkout <branchname>`: Switch to the specified branch.
   - `git branch -d <branchname>`: Safely delete a branch.
   - `git branch -D <branchname>`: Force delete a branch.
-  - `git merge <source-branch>`: After checkout from the source-branch, this merge source-branch with the curret-branch
+  - `git merge <source-branch>`: After checkout from source-branch, this merge source-branch with the curret-branch
+  - `git rebase <source-branch>`: After checkout from source-branch, incorporate the latest updates from source-branch into your current-branch without creating a merge commit.
 
 ---
 
