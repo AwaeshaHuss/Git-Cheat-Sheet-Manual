@@ -93,8 +93,9 @@
 ## Restore and Clean
 
 - **Restore Commands**:
+  - `git restore <filename>`: modifies or restores changes in your working directory, eg: reverting edits or restoring a deleted file(without unstaging).
   - `git restore --staged <filename>`: Unstage the specified file.
-  - `git restore --staged .`: Unstage all files.
+  - `git restore --staged`: Unstage all files.
 
 - **Clean Commands**:
   - `git clean -n`: Preview untracked files/directories to be removed.
