@@ -4,15 +4,15 @@
 
 ## Table of Contents
 1. [Git Add, Reset, and Commit](#git-add-reset-and-commit)
-2. [Push Local Changes to Remote Repository](#git-push-local-changes-to-remote-repo)
-3. [Pull Changes from Remote Repository](#git-pull-changes-from-remote-repository)
+2. [Push Local Changes to Remote Repo](#push-local-changes-to-remote-repo)
+3. [Pull Changes from Remote Repository](#pull-changes-from-remote-repository)
 4. [Git Configurations](#git-configurations)
 5. [Git Branching and Merging](#git-branching-and-merging)
 6. [Git Stash](#git-stash)
-7. [Restore and Clean](#git-restore-and-clean)
-8. [Resetting the Head](#git-resetting-the-head)
-9. [Ignoring Files and Directories](#git-ignoring-files-and-directories-gitignore)
-10. [Tagging and Releasing](#git-tagging-and-releasing)
+7. [Restore and Clean](#restore-and-clean)
+8. [Resetting the Head](#resetting-the-head)
+9. [Ignoring Files and Directories](#ignoring-files-and-directories-gitignore)
+10. [Tagging and Releasing](#tagging-and-releasing)
 
 ---
 
@@ -72,8 +72,8 @@
   - `git checkout <branchname>`: Switch to the specified branch.
   - `git branch -d <branchname>`: Safely delete a branch.
   - `git branch -D <branchname>`: Force delete a branch.
-  - `git merge <source-branch>`: After checkout from source-branch, this merge source-branch with the curret-branch
-  - `git rebase <source-branch>`: After checkout from source-branch, incorporate the latest updates from source-branch into your current-branch without creating a merge commit.
+  - `git merge <source-branch>`: After checkout from source-branch, merge source-branch with the current branch.
+  - `git rebase <source-branch>`: After checkout from source-branch, incorporate the latest updates from source-branch into your current branch without creating a merge commit.
 
 ---
 
@@ -93,7 +93,7 @@
 ## Restore and Clean
 
 - **Restore Commands**:
-  - `git restore <filename>`: modifies or restores changes in your working directory, eg: reverting edits or restoring a deleted file(without unstaging).
+  - `git restore <filename>`: Modify or restore changes in your working directory, e.g., reverting edits or restoring a deleted file (without unstaging).
   - `git restore --staged <filename>`: Unstage the specified file.
   - `git restore --staged`: Unstage all files.
 
@@ -133,9 +133,9 @@
   - `git tag -a <tagname> -m "Tag message"`: Create an annotated tag.
   - `git tag`: List available tags.
   - `git push origin <tagname>`: Push a tag to the remote repository.
-  - `git tag -l <tagname>`: list all the tag in specified tagname, eg: git tag -l "v1.*" => this will list all first the versions[v1.0 - v1.9].
-  - `git tag -d <tagname>`: deletes the specified tag locally.
-  - `git push origin --delete <tagname>`: deletes the specified tag remotly.
+  - `git tag -l <tagname>`: List tags matching a pattern, e.g., `git tag -l "v1.*"`.
+  - `git tag -d <tagname>`: Delete the specified tag locally.
+  - `git push origin --delete <tagname>`: Delete the specified tag remotely.
 
 ---
 
